@@ -155,4 +155,7 @@ public:
 	// Get grip scripts
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "VRGripInterface")
 		bool GetGripScripts(TArray<UVRGripScriptBase*>& ArrayReference);
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "VRGripInterface")
+		void Highlight(bool bHighlight);
 };
